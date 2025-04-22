@@ -19,11 +19,12 @@ class AbstractRecipe(ABC):
     def cleanup(self):
         pass
 
+
 class Recipe1(AbstractRecipe):
 
     def get_ready(self):
-        print('get raw materials')
-        print('get utensils')
+        print('Get raw materials')
+        print('Get utensils')
 
     def do_the_dish(self):
         print('do the dish')
@@ -31,23 +32,11 @@ class Recipe1(AbstractRecipe):
     def cleanup(self):
         print('clean utensils')
 
-class RecipeWithMicrowave(AbstractRecipe):
-    def get_ready(self):
-        print('Get the raw materials')
-        print('Switch on the microwave')
 
-    def do_the_dish(self):
-        print('get stuff ready')
-        print('Put it in the microwave')
-
-    def cleanup(self):
-        print('Clean up the utensils')
-        print('Switch off the microwave')
-
-
+# TypeError: Can't instantiate abstract class AbstractRecipe
+# with abstract methods cleanup, do_the_dish, get_ready
+# recipe = AbstractRecipe()
 
 recipe = Recipe1()
-recipe.execute()
 
-quick_recipe = RecipeWithMicrowave()
-quick_recipe.execute()
+recipe.execute()

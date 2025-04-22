@@ -1,29 +1,29 @@
+# MotorBike
+ # gear, speed
+
 class Book:
-    def __init__(self, name, number_of_copies = 1):
+
+    def __init__(self, name, copies):
         self.name = name
-        self.number_of_copies = number_of_copies
+        self.copies = copies
 
     def __repr__(self):
-        return repr((self.name, self.number_of_copies))
+        return repr((self.name, self.copies))
 
+    def increase_copies(self, how_much):
+        self.copies += how_much
 
-    def increase_number_of_copies(self, how_many = 1):
-        self.number_of_copies += how_many
+    def decrease_copies(self, how_much):
+        self.copies -= how_much
 
+    #set
+    #get
 
-    def decrease_number_of_copies(self, how_many=1):
-        self.number_of_copies -= how_many
+book1 = Book('Mastering Spring 5.0', 200)
+book1.increase_copies(50)
 
-
-book1 = Book("Mastering Spring 5.0", 5)
-book2 = Book("Mastering Python")
-
-book1.increase_number_of_copies(1)
-book1.increase_number_of_copies(2)
-book2.increase_number_of_copies(5)
-book2.increase_number_of_copies(2)
+book2 = Book('Mastering Python 3', 15)
+book2.decrease_copies(5)
 
 print(book1)
 print(book2)
-
-

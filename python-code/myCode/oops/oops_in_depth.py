@@ -3,10 +3,11 @@ class Planet:
         self.name = name
         self.distance_from_sun = distance_from_sun
 
-earth = Planet('Earth', 150)
+earth = Planet('Earth', 200)
 mars = Planet('Mars', 500)
 
 earth.speed = 10000
-print(earth.name)
-print(earth.distance_from_sun)
 print(earth.speed)
+
+# mars.name = 'Mars'
+print(mars.name)
