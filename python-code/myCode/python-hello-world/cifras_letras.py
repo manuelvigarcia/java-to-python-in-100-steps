@@ -49,9 +49,30 @@ def find_combination_all_ops(numbers, target):
 #target = 293
 #   --> todos los números sumados
 
-numbers = [5, 2, 7, 10, 2, 3]
-target = 42
+#numbers = [5, 2, 7, 10, 2, 3]
+#target = 42
 #   --> 5*2*7/10*2*3
+
+#numbers = [3,10,25,9,5,1]
+#target = 775
+#   --> 3*10+1*25
+
+#numbers = [3,10,25,9,5,1]
+#target = 733
+#  --> 10 * 25 - 1 * 3 - 9 - 5
+#  --> 25 * 9 - 5 * 10 - 1 / 3
+#  --> 25 - 1 * 3 + 10 * 9 - 5
+
+#numbers = [1,5,2,1,8,6]
+#target = 775
+#  --> ningún resultado
+
+
+#numbers = [5,5,9,100,7,1]
+#target = 510
+#  --> 5 + 9 / 7 + 100 * 5
+#  --> 100 * 5 + 9 + 1
+#  --> 100 - 5 + 7 * 5
 
 combinations = find_combination_all_ops(numbers, target)
 
