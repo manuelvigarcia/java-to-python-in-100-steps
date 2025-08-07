@@ -74,6 +74,16 @@ def find_combination_all_ops(numbers, target):
 #  --> 100 * 5 + 9 + 1
 #  --> 100 - 5 + 7 * 5
 
+#numbers = [2,10,9,9,3,8]
+#target = 160
+#  --> 8 * 10 * 2
+#  --> 9 + 9 + 2 * 8
+#  --> 8 - 3 + 9 + 2 * 10
+
+numbers = [1,7,50,10,75,1]
+target = 158
+#  --> 75 - 50 - 1 * 7 - 10
+
 combinations = find_combination_all_ops(numbers, target)
 
 if combinations:
