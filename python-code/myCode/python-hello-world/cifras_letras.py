@@ -80,9 +80,23 @@ def find_combination_all_ops(numbers, target):
 #  --> 9 + 9 + 2 * 8
 #  --> 8 - 3 + 9 + 2 * 10
 
-numbers = [1,7,50,10,75,1]
-target = 158
+#numbers = [1,7,50,10,75,1]
+#target = 158
 #  --> 75 - 50 - 1 * 7 - 10
+
+#numbers = [6,1,3,2]
+#target = 35
+#  --> (6+1) * (3+2) # no encuentra esta combinación
+
+#numbers = [3,5,6,1]
+#target = 56
+#  --> (3+5) * (6+1) # no encuentra esta combinación
+
+numbers = [3,2,4,5]
+target = 180
+#  --> (3*2) + (4*5) # no encuentra esta combinación
+
+
 
 combinations = find_combination_all_ops(numbers, target)
 
